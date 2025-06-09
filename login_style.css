@@ -1,0 +1,95 @@
+body {
+   margin-top: 10%;
+   background-color: chocolate;
+}
+#uname, #pword, #submit {
+    display: block;
+    margin: 0px 30px 30px 30px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#pword {
+    margin-bottom: 0px;
+}
+#show-pword {
+    margin-bottom: 30px;
+}
+label {
+    display:block;
+    margin-top: 20px;
+}
+.container {
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 400px;
+    margin:auto;
+    background-color: coral;
+    transition: transform 0.5s ease;
+}
+button {
+    font-family: Roboto;
+    font-weight: bold;
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+.container:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s ease;
+}
+#submit:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    animation: backgroundColorChange 0.3s ease infinite alternate;
+}
+@keyframes backgroundColorChange {
+    0% {
+        background-color: rgb(245, 44, 30);
+    }
+    50% {
+        background-color: rgb(248, 0, 0);
+    }
+    100% {
+        background-color: rgb(255, 123, 0);
+    }
+}
+#icon {
+    display: block;
+    margin-top: 30px;
+}
+h5 {
+    margin: 15px 0px 30px 0px;
+}
+.alternative_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    height: 10px;
+    margin-bottom: 30px;
+}
+hr {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+    height: 0px;
+}
+.social-btn{
+    position: relative;
+}
+#Google, #Facebook {
+    display: block;
+    width: 300px;
+    margin: 30px;    
+}
+.google_icon {
+    position: absolute;
+    top: 4%;
+    left: 30.5%;
+    
+}
+.facebook_icon {
+    position: absolute;
+    top: 76.5%;
+    left: 28.5%;
+}

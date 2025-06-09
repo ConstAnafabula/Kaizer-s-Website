@@ -1,0 +1,331 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.logo { 
+    text-align: center;
+}
+.logo img {
+    border:5px solid rgb(43, 20, 7);
+    border-radius: 20%;
+}
+.logo .logoimg {
+    margin-right: 0;
+    padding-right: 0px;
+    align-items: center;
+    text-decoration: none;
+}
+.logo {
+    background-image: linear-gradient(rgb(40, 35, 32), rgb(65, 55, 47)); ;
+}
+.navbar{
+    background-image: linear-gradient(rgb(65, 55, 47), rgb(40, 35, 32));
+    position: sticky;
+    top: 0;
+}
+.navbar ul {
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar a{
+    text-decoration: none;
+    color:rgb(242,226,211);
+    padding:10px;
+    display: flex;
+    text-align: center;
+}
+.navbar .original{
+    font-weight: bold;
+    margin: 10px;
+}
+.navbar .original:hover{
+    background-color: rgb(165, 7, 7);
+}
+.hero-section {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-image: url(images/random_img/pexels-ifreestock-585752.jpg);
+    background-size: cover;
+    margin: 0px;
+    padding-bottom: 10px;
+    padding-top: 0;
+}
+.hero-section .btn {
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+    border-style:outset;
+    border-width: 5px;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.hero-section .btn:hover {
+    background-color: teal;
+}
+.hero-section h2{
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+}
+.hero-section p{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.hero-section-p {
+    text-align:center;
+    color: rgb(0, 66, 97);
+    font-weight: bold;
+    font-size: 30px;
+}
+.parallax {
+    padding: 10px;
+    background-image: url(images/random_img/pexels-ifreestock-585752.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding-bottom: 300px;
+}
+.footer {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(40, 35, 32);
+}
+.footer a {
+    text-decoration: none;
+    color: rgb(109, 77, 57);
+}
+.footer i {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.three-image {
+    text-align: center;
+}
+.three-image .planets-img {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.three-image h1, .shet{
+    text-align:center ;
+}
+.three-image .description{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.three-image .description .earth {
+    color: rgb(0, 255, 34);
+}
+.three-image .description .mars {
+    color: #8B4000;
+}
+.three-image .description .jupiter {
+    color: #A97142;
+}
+.e {
+    color: rgb(55, 0, 255);
+}
+.m {
+    color: #c1140e;
+}
+.j {
+    color: #ff9100;
+}
+.three-image .description .earth::first-letter {
+    font-size: 30px;
+}
+.three-image .description .mars::first-letter {
+    font-size: 30px;
+}
+.three-image .description .jupiter::first-letter {
+    font-size: 30px;
+}
+.three-image .earth, .mars, .jupiter{
+    max-width: 200px;
+}
+.planets-img .planet-earth:hover, .planet-mars:hover, .planet-jupiter:hover {
+    transform: scale(1.2);
+    transition: transform 0.4s;
+}
+.planet-earth, .planet-mars, .planet-jupiter {
+    border-radius: 100%;
+}
+.slider {
+    position: relative;
+}
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.slides img {
+    flex: 1 0 100%;
+    object-fit: cover;
+    display: block;
+}
+.slider-nav {
+    display: flex;
+    column-gap: 20px;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
+.slider-nav a {
+    opacity: 0.5;
+    border:5px solid rgb(187, 13, 13);
+    border-radius: 50%;
+}
+.slider-nav #button1 {
+    border-color:  white;
+}
+.slider-nav a:active {
+    border-color: rgb(71, 22, 184);
+}
+.slider-nav a:hover {
+    transform: scale(2);
+    opacity: 1;
+}
+.slide-item {
+    position: relative;
+    flex: 0 0 100%;
+}
+.slide-item img {
+    scroll-snap-align: start;
+}
+.slide_text {
+    position:absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#text1 {
+    max-width: 90%;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    font-weight: bold;
+}
+#text2 {
+    max-width: 90%;
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    font-weight: bold;
+}
+#text3 {
+    max-width: 90%;
+    color: rgb(169, 169, 169);
+    font-size: 100px;
+    font-weight: bold;
+}
+#facebook:hover {
+    color: blue;
+    transform: scale(2);
+    transition: transform 0.6s;
+}
+#instagram:hover {
+    background:linear-gradient(to right, #FFD600, #FF7A00, #FF0069, #D300C5, #7638FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2);
+    transition: transform 0.6s;
+}
+#email:hover {
+    background: linear-gradient(to right, #3e65cf, #c71610, #f2a60c, #3b60c4, #08851b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    transform: scale(2);
+    transition: transform 0.6s;
+}
+#telegram:hover {
+    color: #24A1DE;
+    transform: scale(2);
+    transition: transform 0.6s;
+}
+.kit {
+    background-color:saddlebrown;
+}
+.kit-text h3, p {
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px
+}
+.kit-text h3 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+.kit-text p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.kit-form-text {
+    width: 300px;
+    height: 30px;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+.kit-form {
+    display: flex;
+    justify-content: center;
+}
+#no-spam {
+    text-align: center;
+    color: rgb(41, 41, 41);
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+}
+.kit button {
+    background-color: rgb(0, 255, 34);
+    font-weight: bold;
+}
+.kit-form-text:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s;
+    cursor:pointer;
+}
+.outro-img {
+    object-fit: cover;
+}
+.outro {
+    text-align: center;
+    
+}
+.outro h1 {
+    background-image: url(images/random_img/Computer\ Of\ A\ Programmer\ With\ Lines\ Code\ Of\ Software\ Background\,\ Internet\,\ Software\,\ Programmer\ Background\ Image\ And\ Wallpaper\ for\ Free\ Download.jfif);
+    object-fit: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 200px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+}
+.outro h2 {
+    color: rgb(255, 102, 0);
+    font-size: 60px;
+    font-weight: bold;
+}
+.outro h3 {
+    color: rgb(2, 70, 255);
+    font-size: 30px;
+    font-weight: bold;
+}
+.outro p {
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}

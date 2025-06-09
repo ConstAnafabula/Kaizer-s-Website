@@ -1,0 +1,425 @@
+body {
+    background-color: #232e32;
+    margin: 0px;
+    padding: 0px;
+}
+.profile {
+    margin:0px 100px 0px 0px;
+    float:right;
+    border : 3px solid #be3e3e;
+    background-color: #5b6c72;
+    border-radius: 10px;
+    border-style:outset;
+}
+.profile img {
+    margin: 50px 40px 10px 40px;
+    height: 160px;
+    width: 160px;
+    border: 3px solid #D3D3D3;
+    border-radius: 50%;
+}
+.profile p {
+    background-color: white;
+    border: 3px solid #525050;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 40px 50px 40px;
+    max-width: 160px;
+}
+.main {
+    margin: 0px;
+    padding: 0px;
+}
+.about {
+    margin: 30px 20px 0px 20px 
+}
+.about p {
+    max-width: 900px;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    word-spacing: 3px;
+    margin: 0px;
+    padding: 0px;
+}
+.about h1 {
+    font-family: fantasy, copperplate;
+    font-weight: bolder;
+    font-size: 90px;
+    margin-bottom:0px;
+    animation: gradient 0.9s infinite alternate ease;
+}
+@keyframes gradient {
+    0% {
+        background: linear-gradient(to right, #ff416c, #ff4b2b);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    25% {
+        background: linear-gradient(to right, #1a2980, #26d0ce);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    50% {
+        background: linear-gradient(to right, #00f260, #0575e6);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    75% {
+        background: linear-gradient(to right, #ee0979, #ff6a00);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    100% {
+        background: linear-gradient(to right, #654ea3, #eaafc8);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+}
+.banner_cover img {
+    position:relative;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 8/3;
+}
+.banner_profile img {
+    position:absolute;
+    height: 140px ;
+    width: 140px ;
+    border-radius: 50%;
+    top: 95%;
+    left: 30%;
+}
+.banner_name h1{
+    position:absolute;
+    top:113%;
+    left: 28%;
+}
+.banner_name #html {
+    position:absolute;
+    top: 104%;
+    left: 45%;
+}
+.banner_name #css {
+    position:absolute;
+    top: 113%;
+    left: 45%;
+}
+.banner_name #java {
+    position:absolute;
+    top: 104%;
+    left: 53%;
+}
+.banner_name #vb {
+    position:absolute;
+    top: 113%;
+    left: 53%;
+}
+.banner_name #asp {
+    position: absolute;
+    top: 104%;
+    left: 60.9%;
+}
+.banner_name #python {
+    position:absolute;
+    top: 113%;
+    left: 60.9%;
+}
+.banner_name h4 {
+    background-color: chocolate;
+    color: #fdfdfd;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #a3dbf0;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70px;
+}
+.banner_name h4:hover {
+    transform: scale(1.2);
+    transition: transform 0.4s;
+    animation: BackgroundColorChange 1s infinite alternate;
+}
+@keyframes BackgroundColorChange {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: green;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+.banner_name hr{
+    position:absolute;
+    top:123%;
+    left: 23%;
+    width: 54.4%;
+}
+.hobby_skill_character {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.hobby_skill_character .hobbies, .skills, .character {
+    margin-top: 150px;
+}
+.hobby_skill_character ul{
+    list-style-type: none;
+}
+.hobby_skill_character li{
+    width: 200px;
+    border: 2px solid #a3dbf0;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+.hobbies li{
+    background-color: #00bbff;
+}
+.skills li {
+    background-color: #001aff;
+}
+.character li {
+    background-color: #8c00ff;
+}
+.hobby_skill_character li:hover {
+    transform: scale(1.2);
+    transition:transform 0.4s;
+}
+.titles {
+    border-width: 200px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.basic_info {
+    border: 1px solid white;
+    max-width: 350px;
+    border-radius: 10px;
+    margin-left: 80px;
+    background-color: white;
+    max-height: 600px;
+}
+.left_content {
+    display: block;
+}
+.images {
+    position: sticky;
+    top: 0;
+    margin-left: 80px;
+    margin-top: 52px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+}
+.images img {
+    margin:10px
+}
+.images img:hover {
+    transform: scale(3);
+    transition: transform 0.5s;
+}
+.civil_status, .current_city, .hometown, .birthday, .elementary_school, .juniorhigh_school, .seniorhigh_school {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.basic_info h2 {
+    margin-left: 10px;
+}
+.favorite_anime .anime1, .anime2{
+    display: flex;
+}
+.favorite_anime {
+    float: right;
+}
+.animes img {
+    margin-bottom: 10px;
+}
+.animes img:hover {
+    transform:translate(-50%, -50%) scale(2);
+    transition: transform 0.5s;
+}
+.profile_post img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 10px 10px 0px 10px;
+}
+.profile_post {
+    display: flex;
+}
+.profile_post h3 {
+    margin: 37px 0px 0px 0px;
+    font-size: 40px;
+    
+}
+.timeline {
+    display: flex;
+}
+.post {
+    background-color: #232e32;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.post h1 {
+    text-align: center;
+} 
+.favorite_anime {
+    border: 2px solid #232e32;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.songs {
+    margin-top: 825px;
+    border: 2px solid #232e32;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+#hope_album, #nf_hope, #beforeyou_album, #benson_beforeyou, #maps_album, #maroon5_maps, #pastlives_album, #borns_pastlives {
+    display: block;
+}
+.first_song_page, .second_song_page {
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.songs h2 {
+    font-size: 20px;
+}
+.song1, .song2, .song3, .song4 {
+    border: 3px solid #232e32;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.song_list img {
+    border-radius: 10px;
+}
+.games {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 50px;
+}
+.game_list img {
+    border: 30px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.game_top, .game_bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+.games h2 {
+    text-align: center;
+}
+.post hr {
+    max-width: 800px;
+}
+.left_content hr {
+    max-width: 250px;
+}
+.timeline_footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
+}
+.timeline_footer hr {
+    margin: 8px 0px 8px 0px;
+}
+.timeline_footer h4 {
+    padding: 5px;
+    margin: 0px 0px 8px 0px;
+}
+.timeline_footer h4:hover {
+    background-color: rgb(87, 87, 87);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.video {
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+.vid1, .vid2 {
+    display: block;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    background: linear-gradient(rgb(102, 102, 102), rgb(179, 179, 189));
+    max-width: 600px;
+}
+.vid1 {
+    margin-bottom: 20px;
+}
+.vid2 {
+    margin-bottom: 20px;
+}
+.photo {
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+.image_list1, .image_list2, .image_list3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.photo_kababalaghan img {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.comfort_rating {
+    margin: 52px 0px 0px 80px;
+    max-width: 350px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+.comfort_rating h1 {
+    text-align: center;
+}
+.attribute, .trait {
+    display: flex;
+}
+#rates {
+    margin-left: auto;
+    margin-right: 15px;
+}
+.trait h5 {
+    margin-left: auto;
+    margin-right: 25px;
+}
+#personality {
+    margin-left: 35px;
+}
+.trait {
+    margin-left: 25px;
+}
+.game_list img:hover {
+    animation: BorderColorChange 1s infinite alternate;
+}
+@keyframes BorderColorChange {
+    0% {
+        border-color: #00FFFF;
+    }
+    25% {
+        border-color: #FF00FF;
+    }
+    50% {
+        border-color: #39FF14;
+    }
+    75% {
+        border-color: #FFD700;
+    }
+    100% {
+        border-color: #FF2400;
+    }
+}
